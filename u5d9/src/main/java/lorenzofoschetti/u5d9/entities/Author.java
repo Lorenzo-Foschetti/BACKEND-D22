@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 @Getter
 @Setter
@@ -27,15 +27,17 @@ public class Author {
 
     private String email;
 
-    private LocalDateTime dataDiNascita;
+    private LocalDate dataDiNascita;
 
     private String avatar;
 
-    public Author(String name, String surname, String email, LocalDateTime dataDiNascita) {
+    public Author(String name, String surname, String email, LocalDate dataDiNascita) {
         this.name = name;
         this.surname = surname;
         this.email = email;
         this.dataDiNascita = dataDiNascita;
 
     }
+
+
 }
